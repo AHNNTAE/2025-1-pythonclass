@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="pclass" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="pclass" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="pyclass" project-jdk-type="Python SDK" />
 </project>
