@@ -40,19 +40,6 @@ c1, c2, c3, _, _, _ = colors
 print(c1, c2, c3)
 
 
-# 다차원 리스트
-colors = ['red', 'blue', 'grren']
-cities = ['서울','부산','인천','의정부','대전','강릉','논산','포항']
-combi = [colors, cities]
-print(combi)
-print(combi[1][2])
-#print(combi[2][3]) #에러발생
-bigcombi = [combi, [0,2,7]]
-print(bigcombi)
-print(len(bigcombi))
-print(bigcombi[0][1][2])
-print(bigcombi[][][]) #2
-
 # 퀴즈
 first = ["egg", "salad", "bread", "soup" , "canafe"]
 second = ["fish","lamb", "pork", "beef", "chicken"]
