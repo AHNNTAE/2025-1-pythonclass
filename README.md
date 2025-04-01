@@ -55,3 +55,4 @@ import matplotlib.pyplot as plt
 plt.plot(pilist)
 plt.show()
 ```
+- <img src="img/Figure_1.png">
