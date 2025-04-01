@@ -20,4 +20,13 @@ import matplotlib.pyplot as plt
 plt.plot([1,3,4])
 plt.show()
 
-import  opencv
+p = 1
+for n in range(1,100000):
+
+    p = p * ((2 * n +1) ** 2 - 1) / (2*n + 1)** 2
+    #print(p*4, ',')
+    pilist.append(p*4)
+
+import matplotlib.pyplot as plt
+plt.plot(pilist)
+plt.show()
