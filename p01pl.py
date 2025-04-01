@@ -30,3 +30,4 @@ for n in range(1,100000):
 import matplotlib.pyplot as plt
 plt.plot(pilist)
 plt.show()
+;;
