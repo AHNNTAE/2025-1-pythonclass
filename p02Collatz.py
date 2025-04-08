@@ -47,6 +47,11 @@
 #n을 1부터 99까지 변화하면서, 각각의 단계수를 출력할 것
 #그중 가장 큰 수를 찾을 것
 
+n = 9
+
+maxvalue = 0
+maxvaluen = 0
+
 maxvalue = 0
 maxvaluen = 0
 
@@ -65,19 +70,16 @@ for n in range(1, 100):
         ncount += 1
 
     if ncount > maxvalue:
-
         second_maxvalue = maxvalue
         second_maxvaluen = maxvaluen
         maxvalue = ncount
         maxvaluen = n
     elif ncount > second_maxvalue:
-
         second_maxvalue = ncount
         second_maxvaluen = n
 
-print(f'가장 긴 수열: {maxvaluen} ({maxvalue} 단계)')
-print(f'두 번째로 긴 수열: {second_maxvaluen} ({second_maxvalue} 단계)')
-
+print(f'가장 긴 수열: {maxvaluen} ({maxvalue})')
+print(f'두 번째로 긴 수열: {second_maxvaluen} ({second_maxvalue})')
 
 
 
