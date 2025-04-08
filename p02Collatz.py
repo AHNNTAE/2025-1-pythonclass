@@ -41,17 +41,43 @@
 # print(f"가장 긴 단계를 거치는 수: {number_with_max_steps}, 단계 수: {max_steps}")
 
 
-n = 9
+
 
 #단계의 갯수를 셀것
 #n을 1부터 99까지 변화하면서, 각각의 단계수를 출력할 것
 #그중 가장 큰 수를 찾을 것
-while n != 1:
-    if n % 2 == 1:
-        n = 3 * n + 1
-    else:
-        n = n / 2
-    print(n)
+
+maxvalue = 0
+maxvaluen = 0
+
+second_maxvalue = 0
+second_maxvaluen = 0
+
+for n in range(1, 100):
+    ncount = 0
+    i = n
+
+    while i != 1:
+        if i % 2 == 1:
+            i = 3 * i + 1
+        else:
+            i = i // 2
+        ncount += 1
+
+    if ncount > maxvalue:
+
+        second_maxvalue = maxvalue
+        second_maxvaluen = maxvaluen
+        maxvalue = ncount
+        maxvaluen = n
+    elif ncount > second_maxvalue:
+
+        second_maxvalue = ncount
+        second_maxvaluen = n
+
+print(f'가장 긴 수열: {maxvaluen} ({maxvalue} 단계)')
+print(f'두 번째로 긴 수열: {second_maxvaluen} ({second_maxvalue} 단계)')
+
 
 
 
