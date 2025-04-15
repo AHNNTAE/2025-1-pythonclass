@@ -18,3 +18,5 @@ results.sort(key=lambda x: x[1], reverse=True)
 print("단계 수가 가장 큰 상위 3개 숫자:")
 for i in range(3):
     print(f"{i+1}번째: 숫자 = {results[i][0]}, 단계 수 = {results[i][1]}")
+
+    #안태우 과제
